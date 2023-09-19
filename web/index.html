@@ -55,47 +55,48 @@
 <body>
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              PriceSpy
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <!-- header section strats -->
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+      <a class="navbar-brand" href="index.html">
+        <span>
+          PriceSpy
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> Provincias </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="provincias.html"> Madrid/Malaga </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html"> Comentarios falsos </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Sobre Nosotros</a>
-                </li>
-              </ul>
-              <div class="user_option">
-                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                </form>
-              </div>
-            </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Provincias">Provincias <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Madrid">Madrid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Madrid">Málaga</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fraude-anuncios">Fraude de Anuncios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+            </li>
+          </ul>          
+          <div class="user_option">
+            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+            </form>
           </div>
-        </nav>
+        </div>
       </div>
-    </header>
-    <!-- end header section -->
+    </nav>
+  </div>
+</header>
+<!-- end header section -->
 
 
 
@@ -131,6 +132,9 @@
   
   
   <!-- do section -->
+  <section id="Provincias">
+    <!-- Contenido de la sección Provincias de España -->
+  </section>
   <section class="do_section layout_padding">
     <div class="container">
         <div class="row">
@@ -192,6 +196,9 @@
 
 
   <!-- who section -->
+  <section id="Madrid">
+    <!-- Contenido de la sección Provincias de España -->
+  </section>
 
   <section class="who_section">
     <div class="container">
@@ -206,6 +213,12 @@
             <div class="col-md-7 mb-5">
                 <div class="detail-box">
                     <div class="heading_container">
+                      <p>
+            
+                      </p>
+                      <p>
+                      
+                      </p>
                         <h2>
                             Madrid y Málaga
                         </h2>
@@ -268,8 +281,11 @@
 
   
 
-  <!-- work section -->
-  <section class="work_section layout_padding">
+ <!-- work section -->
+ <section id="fraude-anuncios">
+  <!-- Contenido de la sección Fraude de Anuncios de Viviendas -->
+</section>
+<section class="work_section layout_padding">
     <div class="container">
         <div class="heading_container">
             <h2>
@@ -288,10 +304,33 @@
                 veniam, quis nostrud
             </p>
             <!-- Botón debajo del texto con el mismo estilo -->
-            <button onclick="cargarEnlace()" class="custom-button">Abrir enlace</button>
-
-            <!-- Contenedor donde se cargará el enlace -->
-            <div class="do_container" id="enlaceContenedor"></div>
+            <button onclick="cargarEnlace4()" class="custom-button">Ver</button>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>        
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>     
+            <!-- Contenedor donde se cargará el enlace (inicialmente vacío) -->
+            <div class="do_container" id="enlaceContenedor4"></div>
         </div>
         <div class="work_container layout_padding2">
             <div class="box">
@@ -325,12 +364,13 @@
 </style>
 
 <script>
-    // Función para cargar el enlace en el contenedor
-    function cargarEnlace() {
-        var enlaceContenedor = document.getElementById("enlaceContenedor");
-        enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
-    }
-</script>
+    // Función para cargar el enlace en el contenedor debajo del botón
+    function cargarEnlace4() {
+    var enlaceContenedor4 = document.getElementById("enlaceContenedor4");
+    // Cambia la siguiente línea por el enlace que deseas cargar para el botón 4
+    enlaceContenedor4.innerHTML = '<iframe src="https://anusafe.onrender.com/" style="width:370%; height:500px;"></iframe>';
+}
+</script>>
 
 
   <!-- end work section -->
@@ -340,6 +380,9 @@
 
 
   <!-- target section -->
+  <section id="sobrenosotros">
+    <!-- Contenido de la sección Fraude de Anuncios de Viviendas -->
+  </section>
   <section class="target_section layout_padding2">
     <div class="container">
       <div class="row">
@@ -391,7 +434,9 @@
 
 
   <!-- contact section -->
-
+  <section id="sobre-nosotros">
+    <!-- Contenido de la sección SOBRE NOSOTROS -->
+  </section>
   <section class="contact_section layout_padding">
     <div class="container">
       <div class="heading_container">
@@ -443,7 +488,7 @@
               impacto positivo en el negocio.
             </p>
             <!-- Botón "Ver" con los mismos estilos que los botones anteriores y vinculado a google.com -->
-            <button onclick="abrirEnlace1()" class="custom-button">Currículum</button><br>
+            <button onclick="window.open('https://1drv.ms/b/s!AtdnkDDuDDaZlnMxzXYSMQkqgQED?e=onWgt0', '_blank')" class="custom-button">Currículum</button><br>
 
             <!-- Contenedor donde se cargarán los enlaces -->
             <div class="container">
