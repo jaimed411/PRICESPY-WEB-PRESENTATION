@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* Estilos personalizados para el botón */
+    .custom-button {
+      background-color: #E1F56E;
+      color: #ee1c9d;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold; /* Agregar negrita */
+      transition: background-color 0.3s, color 0.3s;
+    }
+  
+    /* Estilos para cambiar el color al pasar el cursor por encima del botón */
+    .custom-button:hover {
+      background-color: #ee1c9d;
+      color: #E1F56E;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de carga de enlace en contenedor</title>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PriceSpy</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <!-- header section strats -->
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+      <a class="navbar-brand" href="index.html">
+        <span>
+          PriceSpy
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Provincias">Provincias <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Madrid">Madrid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Madrid">Málaga</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fraude-anuncios">Fraude de Anuncios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+            </li>
+          </ul>          
+          <div class="user_option">
+            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- end header section -->
+
+
+
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        
+              <div class="row">
+                <div class="col">
+                  <div class="detail-box">
+                    <div>
+                      <h2>
+                        Bievenidos a
+
+                      </h2>
+                      <h1>
+                        PriceSpy
+                      </h1>
+                      <p>
+                        Precio medio por provincias y comentarios falsos de España.
+                      </p>
+                      <div class="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  
+  
+  <!-- do section -->
+  <section id="Provincias">
+    <!-- Contenido de la sección Provincias de España -->
+  </section>
+  <section class="do_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <!-- Columna izquierda para texto, título y botón -->
+            <div class="col-md-6">
+                <div class="heading_container">
+                    <h2>
+                        Provincias de España
+                    </h2>
+                    <p>
+                        Modelo de ML con 85000 datos donde se predice el precio de la vivienda según los m2 y
+                        habitaciones en las diferentes provincias de España. Es un modelo basado
+                        en muestras
+                    </p>
+                    <p>    
+                        Modelo de ML con 85000 datos donde se predice el precio de la vivienda según los m2 y
+                        habitaciones en las diferentes provincias de España. Es un modelo basado
+                        en muestras
+                    </p>
+                    <p>
+                      Modelo de ML con 85000 datos donde se predice el precio de la vivienda según los m2 y
+                      habitaciones en las diferentes provincias de España. Es un modelo basado
+                      en muestras
+                    </p>
+                    <!-- Botón para cargar el enlace en el contenedor -->
+                    <button onclick="cargarEnlace()" class="custom-button" style="background-color: #E1F56E; color: #ee1c9d;">Ver</button>
+                </div>
+            </div>
+            <!-- Columna derecha para la imagen -->
+            <div class="col-md-6">
+                <div class="do_container">
+                    <img src="images/provincias.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contenedor donde se cargará el enlace -->
+<div class="container">
+    <div class="do_container" id="enlaceContenedor"></div>
+</div>
+
+<script>
+    // Función para cargar el enlace en el contenedor
+    function cargarEnlace() {
+        var enlaceContenedor = document.getElementById("enlaceContenedor");
+        enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
+    }
+</script>
+<p>
+    
+</p>
+
+  <!-- end do section -->
+
+
+
+
+
+  <!-- who section -->
+  <section id="Madrid">
+    <!-- Contenido de la sección Provincias de España -->
+  </section>
+
+  <section class="who_section">
+    <div class="container">
+        <div class="row">
+            <!-- Columna para la imagen con margen inferior -->
+            <div class="col-md-5 mb-5">
+                <div class="img-box">
+                    <img src="images/madrid_malaga.png" alt="" class="custom-image">
+                </div>
+            </div>
+            <!-- Columna para el texto, título y botón con margen inferior -->
+            <div class="col-md-7 mb-5">
+                <div class="detail-box">
+                    <div class="heading_container">
+                      <p>
+            
+                      </p>
+                      <p>
+                      
+                      </p>
+                        <h2>
+                            Madrid y Málaga
+                        </h2>
+                    </div>
+                    <p>
+                        MADRID ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud
+                    </p>
+                    <!-- Botón para abrir el primer enlace -->
+                    <button onclick="abrirEnlace1()" class="custom-button">Ver</button><br>
+                    <p>
+
+                    </p>
+                    <p>
+                      MALAGA ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                      veniam, quis nostrud
+                  </p>
+                    <!-- Botón para abrir el segundo enlace -->
+                    <button onclick="abrirEnlace2()" class="custom-button">Ver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+  /* Margen a la izquierda en la columna de la derecha */
+  .detail-box {
+    margin-left: 80px;
+  }
+</style>
+
+
+
+<!-- Contenedor donde se cargarán los enlaces -->
+<div class="container">
+    <div class="do_container" id="enlaceContenedor1"></div>
+</div>
+
+<script>
+    // Función para cargar el primer enlace
+    function abrirEnlace1() {
+        var enlaceContenedor = document.getElementById("enlaceContenedor1");
+        enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
+    }
+
+    // Función para cargar el segundo enlace
+    function abrirEnlace2() {
+        var enlaceContenedor = document.getElementById("enlaceContenedor1");
+        enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
+    }
+</script>
+  <!-- end who section -->
+
+
+
+  
+
+ <!-- work section -->
+ <section id="fraude-anuncios">
+  <!-- Contenido de la sección Fraude de Anuncios de Viviendas -->
+</section>
+<section class="work_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Fraude de Anuncios de viviendas
+            </h2>
+            <p>
+                MALAGA ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud
+            </p>
+            <p>
+                MALAGA ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud
+            </p>
+            <!-- Botón debajo del texto con el mismo estilo -->
+            <button onclick="cargarEnlace4()" class="custom-button">Ver</button>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>        
+            <p>
+            
+            </p>
+            <p>
+            
+            </p>     
+            <!-- Contenedor donde se cargará el enlace (inicialmente vacío) -->
+            <div class="do_container" id="enlaceContenedor4"></div>
+        </div>
+        <div class="work_container layout_padding2">
+            <div class="box">
+                <img src="images/fraude-1.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/fraude-2.png" alt="">
+            </div>
+            <div class="box">
+                <img src="images/fraude-3.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .work_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .box {
+        flex-basis: calc(25% - 20px); /* Establece el ancho de cada caja al 25% del contenedor menos un espacio entre las cajas */
+        text-align: center;
+        margin-bottom: 20px; /* Espacio entre las cajas */
+    }
+    .box img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<script>
+    // Función para cargar el enlace en el contenedor debajo del botón
+    function cargarEnlace4() {
+    var enlaceContenedor4 = document.getElementById("enlaceContenedor4");
+    // Cambia la siguiente línea por el enlace que deseas cargar para el botón 4
+    enlaceContenedor4.innerHTML = '<iframe src="https://anusafe.onrender.com/" style="width:370%; height:500px;"></iframe>';
+}
+</script>>
+
+
+  <!-- end work section -->
+
+
+
+
+
+  <!-- target section -->
+  <section id="sobrenosotros">
+    <!-- Contenido de la sección Fraude de Anuncios de Viviendas -->
+  </section>
+  <section class="target_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="detail-box">
+            <h2>
+              2
+            </h2>
+            <h5>
+              Personas
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="detail-box">
+            <h2>
+              +160000
+            </h2>
+            <h5>
+              datos
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="detail-box">
+            <h2>
+              4
+            </h2>
+            <h5>
+              modelos
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="detail-box">
+            <h2>
+              200+
+            </h2>
+            <h5>
+              Horas
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end target section -->
+
+
+  <!-- contact section -->
+  <section id="sobre-nosotros">
+    <!-- Contenido de la sección SOBRE NOSOTROS -->
+  </section>
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Sobre nosotros
+        </h2>
+        <p>
+          Creemos que cada problema tiene una solución creativa esperando ser descubierta,
+           y trabajamos incansablemente para encontrar esas soluciones y marcar la diferencia 
+           en la vida de las personas.
+        </p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Columna "Contacta" -->
+          <div class="contacta_column">
+            <!-- Contenido de la columna "Contacta" -->
+            <h3>Abel Montiel</h3>
+            <p>
+              El autor subraya la importancia de amar lo que haces para encontrar satisfacción en el trabajo. Tras dejar el derecho, encontró su pasión en la ciencia de datos y presenta sus logros en el proyecto de 4Geek Academy. Destaca la búsqueda de la vocación y la adaptación a nuevas oportunidades.
+            </p>
+            <!-- Botón "Ver" con los mismos estilos que los botones anteriores y vinculado a google.com -->
+            <button onclick="abrirEnlace1()" class="custom-button">Currículum</button><br>
+
+            <!-- Contenedor donde se cargarán los enlaces -->
+            <div class="container">
+                <div class="do_container" id="enlaceContenedor1"></div>
+            </div>
+
+            <script>
+                // Función para cargar el primer enlace (google.com) en una nueva pestaña
+                function abrirEnlace1() {
+                    window.open("https://www.google.com", "_blank");
+                }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Columna "Nuestra Info" -->
+          <div class="nuestra_info_column">
+            <!-- Contenido de la columna "Nuestra Info" -->
+            <h3>Jaime Dodero</h3>
+            <p>
+              Soy un chico de 33 años de Madrid (España) residente en Andorra.
+              Me considero una persona autodidacta, responsable, curioso y me apasiona resolver
+              problemas. Siempre estoy buscando retos en el mundo de los datos,
+              y disfruto explorando soluciones innovadoras que puedan generar un impacto
+              impacto positivo en el negocio.
+            </p>
+            <!-- Botón "Ver" con los mismos estilos que los botones anteriores y vinculado a google.com -->
+            <button onclick="window.open('https://1drv.ms/b/s!AtdnkDDuDDaZlnMxzXYSMQkqgQED?e=onWgt0', '_blank')" class="custom-button">Currículum</button><br>
+
+            <!-- Contenedor donde se cargarán los enlaces -->
+            <div class="container">
+                <div class="do_container" id="enlaceContenedor1"></div>
+            </div>
+
+            <script>
+                // Función para cargar el primer enlace (google.com) en una nueva pestaña
+                function abrirEnlace1() {
+                    window.open("https://www.google.com", "_blank");
+                }
+            </script>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Imagen debajo de las dos columnas -->
+      <div class="map_img-box">
+        <img src="images/sobrenosotros.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2023 All Rights Reserved.
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script 
+    -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
+</body>
+
+</html>
