@@ -54,7 +54,7 @@ body {
   top: 50%;
   width: 40px;
   height: 5px;
-  background-color: #E1F56E;
+  background-color: #ee1c9d;
 }
 
 .heading_container h2::before {
@@ -452,7 +452,7 @@ a:focus {
 .target_section {
   background-image: url(../images/target.png);
   background-size: cover;
-  color: #ee1c9d;
+  color: #E1F56E;
   text-align: center;
 }
 
@@ -498,7 +498,7 @@ a:focus {
 
 .footer_section p {
   padding: 20px 65px;
-  color: #E1F56E;
+  color: #ffffff;
   margin: 0 auto;
   text-align: center;
 }
