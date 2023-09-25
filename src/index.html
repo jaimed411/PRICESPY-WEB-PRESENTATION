@@ -21,11 +21,6 @@
       background-color: #ee1c9d;
       color: #E1F56E;
     }
-    /* Estilos para hacer las imágenes responsivas */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -161,19 +156,20 @@
                         Provincias de España
                     </h2>
                     <p>
-                        Este es un modelo de ML con 85000 datos donde se predice el precio de la vivienda
-                        según los m2 y habitaciones en las diferentes provincias de España.
+                      Este es un modelo de Machine Learning alimentado con 85.000 datos que tiene como 
+                      objetivo claro predecir el precio de la vivienda en las diversas
+                      provincias de España. ¿Cómo lo hacemos posible?
                     </p>
                     <p>    
-                        Mediante el scrapping de aproximadamente 1800 anuncios por provincia de una
-                        página web, hemos creado un modelo por provincia para luego juntarlos en
-                        un el modelo para crear la aplicación final. Es un modelo basado en muestras.
+                      El proceso comienza con web scraping. Se recopila alrededor de 10800 anuncios
+                      de propiedades en cada provincia desde una web de viviendas. Cada provincia 
+                      tiene su propio modelo único, adaptado a sus características de m2 y habitaciones. 
                     </p>
                     <p>
                   
                     </p>
                     <!-- Botón para cargar el enlace en el contenedor -->
-                    <button onclick="cargarEnlace()" class="custom-button">Ver</button><br>
+                    <button onclick="cargarEnlace()" class="custom-button">Ver Provincias</button><br>
                 </div>   
             </div>
             <!-- Columna derecha para la imagen -->
@@ -246,7 +242,7 @@
                       para poder obtener un resultado más preciso.
                   </p>
                     <!-- Botón para abrir el primer enlace -->
-                    <button onclick="abrirEnlace1()" class="custom-button">Ver</button><br>
+                    <button onclick="abrirEnlace2()" class="custom-button">Ver Madrid</button><br>
                     <p>
 
                     </p>
@@ -260,7 +256,7 @@
                       para poder obtener un resultado más preciso.
                   </p>
                     <!-- Botón para abrir el segundo enlace -->
-                    <button onclick="abrirEnlace2()" class="custom-button">Ver</button>
+                    <button onclick="abrirEnlace2()" class="custom-button">Ver Málaga</button>
                 </div>
             </div>
         </div>
@@ -447,9 +443,7 @@
           Sobre nosotros
         </h2>
         <p>
-          Creemos que cada problema tiene una solución creativa esperando ser descubierta,
-           y trabajamos incansablemente para encontrar esas soluciones y marcar la diferencia 
-           en la vida de las personas.
+          ⬋ ⬊
         </p>
       </div>
       
@@ -473,12 +467,7 @@
                 <div class="do_container" id="enlaceContenedor1"></div>
             </div>
 
-            <script>
-                // Función para cargar el primer enlace (google.com) en una nueva pestaña
-                function abrirEnlace1() {
-                    window.open("https://www.google.com", "_blank");
-                }
-            </script>
+
           </div>
         </div>
         <div class="col-md-6">
@@ -494,7 +483,7 @@
               impacto positivo en el negocio.
             </p>
             <!-- Botón "Ver" con los mismos estilos que los botones anteriores y vinculado a google.com -->
-            <button onclick="window.open('https://www.linkedin.com/in/jdodero/', '_blank')" class="custom-button">LinkedIn</button><br>
+            <button onclick="window.open('https://www.linkedin.com/in/jdodero', '_blank')" class="custom-button">LinkedIn</button><br>
 
             <!-- Contenedor donde se cargarán los enlaces -->
             <div class="container">
@@ -513,7 +502,7 @@
       
       <!-- Imagen debajo de las dos columnas -->
       <div class="map_img-box">
-        <img src="images/sobrenosotros.png" alt="">
+        <img src="images/sobrenosotros.png" alt="" style="width: 100%; height: auto; max-height: 500px;">
       </div>
     </div>
   </section>
