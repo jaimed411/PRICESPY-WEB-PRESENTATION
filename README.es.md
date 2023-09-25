@@ -1,33 +1,43 @@
-# HTML Hello
+# PriceSpy website
 
-El boilerplate más básico para cualquier estudiante de 4Geeks Academy, empieza tu primer sitio web desde cero.
+La plataforma que combina  analítica de datos e inteligencia artificial para proporcionar información valiosa sobre el mercado de viviendas en España y asi ayudar a la toma decisiones para determinar el valor de una vivienda
 
-> Tienes un video tutorial sobre [cómo usar esta plantilla para crear tu primer sitio web aquí](https://youtu.be/dfbDCMu_p-0).
+El proyecto se divide en:
+- Modelo Provincias (link)
+- Modelo Madrid (link)
+- Modelo Málaga (link)
+- Modelo Comentarios Fraudulentos (link)
 
-## ¿Qué hacer a continuación?
 
-Crea un archivo `index.html` con [la estructura básica de HTML](https://4geeks.com/es/lesson/what-is-html-learn-html-es#estructura-de-pgina) y ve el resultado en vivo corriendo un servidor web utilizando el siguiente comando:
+## DEMO
 
-```bash
-$ pip3 install flask && python3 server.py
-```
+https://pricespy.onrender.com/
 
-- Puedes crear tantos archivos HTML cómo desees.
-- También puedes crear archivos CSS e importarlos en tu página web utilizando una etiqueta `<link>` ubicándola entre las etiquetas `<head></head>`, de la siguiente manera:
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+## Requisitos para acceso
+
+1. cd /tu_proyecto/src
+2. pip install flask
+3. python3 server.py
+4. Disfruta la web! 
+
+
+## Instalación
+
+Instalar flask ' pip install Flask '
+
+
+## Uso
+
+Este proyecto contiene una pagina web con acceso a cuatro modelos de machine learning basado en las viviendas de España. Pincha sobre cada botón para disfrutar del modelo cambiando las caracterísitcas a tu gusto. Las aplicaciones estan en un servidor gratuito por lo que puede tardar un poco en cargar.
+
+
+## Autores
+
+- Jaime Dodero (https://github.com/jaimed411)
+- Abel montiel (https://github.com/programa-door)
 
 
 ## Agradecimientos
 
-Esta y otras plantillas son utilizadas para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp). 
-
-Realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. 
-
-Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero/?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/desarrollador-full-stack/desarrollador-full-stack), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
+Agradecemos a la academia 4geeks toda nuestra experiencia adquirid...........
