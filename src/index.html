@@ -115,9 +115,9 @@
                   <strong>PriceSpy</strong>
                 </h1>
                 <p>
-                  La plataforma que combina  analítica de datos e inteligencia artificial
-                  para proporcionar información valiosa sobre el mercado de viviendas en España 
-                  y asi ayudar a la toma decisiones para determinar el valor de una vivienda
+                  La plataforma que combina analítica de datos e inteligencia artificial para 
+                  proporcionar información valiosa sobre el mercado de viviendas en España y asi 
+                  ayudar a la toma decisiones para determinar el valor de un inmueble.
                 </p>
                 <div class="">
                 </div>
@@ -155,14 +155,16 @@
                         Provincias de España
                     </h2>
                     <p>
-                      Este es un modelo de Machine Learning alimentado con 85.000 datos que tiene como 
-                      objetivo claro predecir el precio de la vivienda en las diversas
-                      provincias de España. ¿Cómo lo hacemos posible?
+                      Presentamos modelo de Machine Learning, impulsado por una base de datos de 85,000 registros. 
+                      Su misión es prever de forma genérica el 
+                      precio de la vivienda en las diversas provincias de España.
                     </p>
                     <p>    
-                      El proceso comienza con web scraping. Se recopila alrededor de 10800 anuncios
-                      de propiedades en cada provincia desde una web de viviendas. Cada provincia 
-                      tiene su propio modelo único, adaptado a sus características de m2 y habitaciones. 
+                      El proceso se inicia con web scraping. Extraemos alrededor de 1,800 anuncios de 
+                      propiedades de una plataforma de viviendas para cada provincia. Cada modelo 
+                      provincial es único, adaptado a las características predictivas. 
+                      Este enfoque garantiza resultados genéricos en la predicción de los precios de 
+                      las viviendas. 
                     </p>
                     <p>
                   
@@ -204,10 +206,6 @@
 
 
   <!-- who section -->
-  <section id="Madrid">
-    <!-- Contenido de la sección Provincias de España -->
-  </section>
-
   <section class="who_section">
     <div class="container">
         <div class="row">
@@ -221,41 +219,19 @@
             <div class="col-md-7 mb-5">
                 <div class="detail-box">
                     <div class="heading_container">
-                      <p>
-            
-                      </p>
-                      <p>
-                      
-                      </p>
-                        <h2>
-                            Madrid y Málaga
-                        </h2>
+                        <p></p>
+                        <p></p>
+                        <h2>Madrid y Málaga</h2>
                     </div>
-                    <p>
-                      Este es un modelo de ML más preciso con 40000 datos donde se predice el precio 
-                      de la vivienda en la Comunidad de Madrid.
-                  </p>
-                  <p>    
-                      Después del scrapping y analizar todos los datos, hemos sacado
-                      un modelo donde es posible rellenar hasta 14 características de la vivienda
-                      para poder obtener un resultado más preciso.
-                  </p>
+                    <p>Descubre nuestro modelo de Madrid: una herramienta de precisión con más de 40,000 datos meticulosamente recopilados.</p>
+                    <p>Al perfeccionar las prácticas de scrapping y análisis de datos, hemos creado una solución que proyecta con precisión el precio de la vivienda en la destacada Comunidad de Madrid. Se puede ingresar hasta 14 características detalladas de tu inmueble.</p>
                     <!-- Botón para abrir el primer enlace -->
-                    <button onclick="abrirEnlace2()" class="custom-button">Ver Madrid</button><br>
-                    <p>
-
-                    </p>
-                    <p>
-                      Este es un modelo de ML más preciso con 40000 datos donde se predice el precio 
-                      de la vivienda en la provincia de Málaga.
-                  </p>
-                  <p>    
-                      Después del scrapping y analizar todos los datos, hemos sacado
-                      un modelo donde es posible rellenar hasta 14 características de la vivienda
-                      para poder obtener un resultado más preciso.
-                  </p>
+                    <button onclick="abrirEnlaceMadrid()" class="custom-button">Ver Madrid</button><br>
+                    <p></p>
+                    <p>Explora nuestro modelo de Málaga: una solución de precisión respaldada por más de 45,000 datos exhaustivamente analizados.</p>
+                    <p>Mediante el refinamiento de técnicas de scrapping y análisis de datos, hemos creado una herramienta que predice con exactitud el precio de la vivienda en la distinguida Comunidad de Málaga. Con la capacidad de ingresar hasta 14 características específicas de tu hogar.</p>
                     <!-- Botón para abrir el segundo enlace -->
-                    <button onclick="abrirEnlace2()" class="custom-button">Ver Málaga</button>
+                    <button onclick="abrirEnlaceMalaga()" class="custom-button">Ver Málaga</button>
                 </div>
             </div>
         </div>
@@ -269,25 +245,74 @@
   }
 </style>
 
-
-
-<!-- Contenedor donde se cargarán los enlaces --dddd>
+<!-- Contenedor donde se cargarán los enlaces -->
 <div class="container">
-    <div class="do_container" id="enlaceContenedor1"></div>
+  <div class="do_container" id="enlaceContenedorMadrid"></div>
+  <div class="do_container" id="enlaceContenedorMalaga"></div>
 </div>
 
 <script>
-    // Función para cargar el primer enlace
-    function abrirEnlace1() {
-        var enlaceContenedor = document.getElementById("enlaceContenedor1");
-        enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
-    }
+  // Función para cargar el enlace de Madrid
+  function abrirEnlaceMadrid() {
+      var enlaceContenedor = document.getElementById("enlaceContenedorMadrid");
+      enlaceContenedor.style.backgroundColor = "#ee1c9d";
+      enlaceContenedor.style.height = "500px"; // Ajusta la altura según tus necesidades
+      
+      // Crear el enlace
+      var enlace = document.createElement("a");
+      enlace.href = "https://github.com/jaimed411/PROYECTO-FINAL-MADRID";
+      enlace.target = "_blank";
+      enlace.textContent = "HOLA";
+      
+      // Crear el enlace
+      var enlace = document.createElement("a");
+      enlace.href = "https://github.com/jaimed411/PROYECTO-FINAL-MADRID";
+      enlace.target = "_blank";
+      enlace.textContent = "HOLA";
+      
+      
+      // Aplicar estilos al enlace
+      enlace.style.fontSize = "100px"; /* Tamaño de fuente a 100px */
+      enlace.style.color = "#E1F56E"; /* Cambiar el color del enlace */
+      // Aplicar estilos al contenedor para centrar horizontalmente
+      enlaceContenedor.style.textAlign = "center";
+      enlaceContenedor.style.lineHeight = enlaceContenedor.style.height; /* Centrar verticalmente */
+      
 
-    // Función para cargar el segundo enlace
-    function abrirEnlace2() {
-        var enlaceContenedor = document.getElementById("enlaceContenedor1");
-        enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
-    }
+      
+      // Agregar el enlace al contenedor
+      enlaceContenedor.innerHTML = ''; // Limpia cualquier contenido anterior
+      enlaceContenedor.appendChild(enlace);
+      
+  }
+
+  // Función para cargar el enlace de Málaga
+  function abrirEnlaceMalaga() {
+      var enlaceContenedor = document.getElementById("enlaceContenedorMalaga");
+      enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
+  }
+</script>
+
+
+
+<!-- Contenedor donde se cargarán los enlaces -->
+<div class="container">
+  <div class="do_container" id="enlaceContenedor2"></div>
+  <div class="do_container" id="enlaceContenedor2"></div>
+</div>
+
+<script>
+  // Función para cargar el primer enlace (Madrid)
+  function abrirEnlace1() {
+      var enlaceContenedor = document.getElementById("enlaceContenedor2");
+      enlaceContenedor.innerHTML = '<iframe src="https://google.com/" style="width:100%; height:500px;"></iframe>';
+  }
+
+  // Función para cargar el segundo enlace (Málaga)
+  function abrirEnlace2() {
+      var enlaceContenedor = document.getElementById("enlaceContenedor2");
+      enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
+  }
 </script>
   <!-- end who section -->
 
@@ -306,14 +331,17 @@
                 Fraude de Anuncios de viviendas
             </h2>
             <p>
-                Este es un modelo NLP con 2000 descripciones (1000 reales y 1000 fraudulentas generadas
-                por inteligencia artificial).
+              Introducimos nuestro modelo NLP diseñado para detectar fraudes en anuncios de viviendas. 
+              Este innovador sistema se ha entrenado con un conjunto de datos que incluye 2000 
+              descripciones, divididas en 1000 reales y 1000 fraudulentas generadas por inteligencia
+               artificial.
             </p>
             <p>
-                Mediante la obtención de las descripciones de las viviendas obtenidas, y añadiendo
-                textos falsos, hemos obetenido un modelo para identificar de manera precisa las 
-                características lingüísticas que indicaban posibles intentos de estafa en las 
-                descripciones de las viviendas. 
+              Al analizar detalladamente las descripciones reales y sintéticas, hemos desarrollado 
+              un modelo que identifica con las características lingüísticas indicativas de posibles
+               intentos de estafa en los anuncios de viviendas. Este enfoque avanzado en la detección
+               de fraudes brinda una capa adicional de seguridad al evaluar la autenticidad de las
+                descripciones inmobiliarias. 
             </p>
             <!-- Botón debajo del texto con el mismo estilo -->
             <button onclick="cargarEnlace4()" class="custom-button">Ver Fraude de Anuncios</button>
@@ -397,7 +425,7 @@
         <div class="col-md-3 col-sm-6">
           <div class="detail-box">
             <h2>
-              +160000
+              +180000
             </h2>
             <h5>
               datos
