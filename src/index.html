@@ -55,7 +55,7 @@
 <body>
   <div class="hero_area">
     <!-- header section strats -->
-    <!-- header section strats -->
+<!-- header section starts -->
 <header class="header_section">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
@@ -75,12 +75,12 @@
               <a class="nav-link" href="#Madrid">Madrid</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Madrid">Málaga</a>
+              <a class="nav-link" href="#Malaga">Málaga</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#fraude-anuncios">Fraude de Anuncios</a>
             </li>
-            <li class="nav-item">
+            <li class "nav-item">
               <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
             </li>
           </ul>          
@@ -245,76 +245,30 @@
   }
 </style>
 
-<!-- Contenedor donde se cargarán los enlaces -->
+<!-- Container where links will be loaded -->
 <div class="container">
   <div class="do_container" id="enlaceContenedorMadrid"></div>
   <div class="do_container" id="enlaceContenedorMalaga"></div>
 </div>
 
 <script>
-  // Función para cargar el enlace de Madrid
+  // Function to load the link for Madrid
   function abrirEnlaceMadrid() {
-      var enlaceContenedor = document.getElementById("enlaceContenedorMadrid");
-      enlaceContenedor.style.backgroundColor = "#ee1c9d";
-      enlaceContenedor.style.height = "500px"; // Ajusta la altura según tus necesidades
-      
-      // Crear el enlace
-      var enlace = document.createElement("a");
-      enlace.href = "https://github.com/jaimed411/PROYECTO-FINAL-MADRID";
-      enlace.target = "_blank";
-      enlace.textContent = "HOLA";
-      
-      // Crear el enlacesa
-      var enlace = document.createElement("a");
-      enlace.href = "https://github.com/jaimed411/PROYECTO-FINAL-MADRID";
-      enlace.target = "_blank";
-      enlace.textContent = "HOLA";
-      
-      
-      // Aplicar estilos al enlace
-      enlace.style.fontSize = "100px"; /* Tamaño de fuente a 100px */
-      enlace.style.color = "#E1F56E"; /* Cambiar el color del enlace */
-      // Aplicar estilos al contenedor para centrar horizontalmente
-      enlaceContenedor.style.textAlign = "center";
-      enlaceContenedor.style.lineHeight = enlaceContenedor.style.height; /* Centrar verticalmente */
-      
-
-      
-      // Agregar el enlace al contenedor
-      enlaceContenedor.innerHTML = ''; // Limpia cualquier contenido anterior
-      enlaceContenedor.appendChild(enlace);
-      
+    var enlaceContenedorMadrid = document.getElementById("enlaceContenedorMadrid");
+    // Replace the following URL with the link you want to load for Madrid
+    enlaceContenedorMadrid.innerHTML = '<iframe src="https://anusafe.onrender.com/" style="width:100%; height:500px;"></iframe>';
   }
 
-  // Función para cargar el enlace de Málaga
+  // Function to load the link for Málaga
   function abrirEnlaceMalaga() {
-      var enlaceContenedor = document.getElementById("enlaceContenedorMalaga");
-      enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
+    var enlaceContenedorMalaga = document.getElementById("enlaceContenedorMalaga");
+    // Replace the following URL with the link you want to load for Málaga
+    enlaceContenedorMalaga.innerHTML = '<iframe src="https://anusafe.onrender.com/" style="width:100%; height:500px;"></iframe>';
   }
 </script>
 
 
 
-<!-- Contenedor donde se cargarán los enlaces -->
-<div class="container">
-  <div class="do_container" id="enlaceContenedor2"></div>
-  <div class="do_container" id="enlaceContenedor2"></div>
-</div>
-
-<script>
-  // Función para cargar el primer enlace (Madrid)
-  function abrirEnlace1() {
-      var enlaceContenedor = document.getElementById("enlaceContenedor2");
-      enlaceContenedor.innerHTML = '<iframe src="https://google.com/" style="width:100%; height:500px;"></iframe>';
-  }
-
-  // Función para cargar el segundo enlace (Málaga)
-  function abrirEnlace2() {
-      var enlaceContenedor = document.getElementById("enlaceContenedor2");
-      enlaceContenedor.innerHTML = '<iframe src="https://premed-provincias.onrender.com/" style="width:100%; height:500px;"></iframe>';
-  }
-</script>
-  <!-- end who section -->
 
 
 
@@ -469,9 +423,6 @@
         <h2>
           Sobre nosotros
         </h2>
-        <p>
-          ⬋ ⬊
-        </p>
       </div>
       
       <div class="row">
